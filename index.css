@@ -1,0 +1,111 @@
+body {
+  background-color: grey;
+}
+
+.clock {
+  color: white;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  font-size: 400%;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+.form-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.greetings {
+  font-size: 50px;
+  color: white;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.weather {
+  color: white;
+  font-size: 200%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.name-ip {
+  outline: none;
+  border: 0px;
+  border-bottom: 2px solid white;
+  background: none;
+  font-size: 50px;
+  color: white;
+  width: 500px;
+}
+
+.name-ip::placeholder {
+  color: white;
+}
+
+.todoform {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+.todo-ip {
+  outline: none;
+  border: 10px;
+  border-bottom: 2px solid white;
+  background: none;
+  font-size: 30px;
+  color: white;
+  width: 300px;
+}
+
+.todo-ip::placeholder {
+  color: white;
+}
+
+.todolist {
+  color: white;
+  display: flex;
+  align-items: center;
+
+  font-size: 30px;
+  flex-direction: column;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: large;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
